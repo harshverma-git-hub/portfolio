@@ -31,12 +31,15 @@ export default function Hero() {
           </a>
 
           <a
-            href="/resume.pdf"
-            download
-            className="px-6 py-3 border border-gray-400 hover:border-indigo-400 hover:text-indigo-400 rounded-full text-lg font-medium flex items-center gap-2 transition"
-          >
-            Download CV <Download className="w-5 h-5" />
-          </a>
+   href="/Harsh_Verma_Resume.pdf"
+  download="Harsh_Verma_Resume.pdf"
+  className="px-6 py-3 rounded-full border border-gray-400 text-gray-200 hover:bg-gray-800 transition flex items-center justify-center space-x-2"
+>
+  <span>Download CV</span>
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
+  </svg>
+</a>
         </div>
       </div>
 
