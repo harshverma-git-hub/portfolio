@@ -18,6 +18,7 @@ function Navbar() {
           <li><a href="#home" className="hover:text-indigo-600">Home</a></li>
           <li><a href="#about" className="hover:text-indigo-600">About</a></li>
           <li><a href="#projects" className="hover:text-indigo-600">Projects</a></li>
+          <li><a href="#hobbies" className="hover:text-indigo-600">Hobbies</a></li>
           <li><a href="#contact" className="hover:text-indigo-600">Contact</a></li>
         </ul>
 
@@ -37,6 +38,7 @@ function Navbar() {
             <li><a href="#home" onClick={() => setIsOpen(false)}>Home</a></li>
             <li><a href="#about" onClick={() => setIsOpen(false)}>About</a></li>
             <li><a href="#projects" onClick={() => setIsOpen(false)}>Projects</a></li>
+            <li><a href="#hobbies" onClick={() => setIsOpen(false)}>Hobbies</a></li>
             <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
           </ul>
         </div>

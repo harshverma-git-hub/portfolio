@@ -24,12 +24,12 @@ export default function Contact() {
                 📍 <span className="ml-2">Agra, India</span>
               </li>
               <li>
-                📧 <a href="mailto:your.email@example.com" className="ml-2 text-indigo-500 hover:underline">
-                  your.email@example.com
+                📧 <a href="mailto:harshverma.tech@gmail.com" className="ml-2 text-indigo-500 hover:underline">
+                  harshverma.tech@gmail.com
                 </a>
               </li>
               <li>
-                💼 <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noreferrer"
+                💼 <a href="https://www.linkedin.com/in/Harsh-Verma-Profile/" target="_blank" rel="noreferrer"
                   className="ml-2 text-indigo-500 hover:underline">
                   LinkedIn
                 </a>

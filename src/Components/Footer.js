@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 py-6 mt-12">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
-        
+
         {/* Left - Logo / Name */}
         <h2 className="text-xl font-bold text-white mb-4 md:mb-0">
           Harsh Verma
@@ -24,10 +24,10 @@ export default function Footer() {
           <a href="https://github.com/harshverma-git-hub" target="_blank" rel="noreferrer">
             <Github className="w-5 h-5 hover:text-white transition" />
           </a>
-          <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/Harsh-Verma-Profile/" target="_blank" rel="noreferrer">
             <Linkedin className="w-5 h-5 hover:text-white transition" />
           </a>
-          <a href="mailto:your-email@gmail.com">
+          <a href="mailto:harshverma.tech@gmail.com">
             <Mail className="w-5 h-5 hover:text-white transition" />
           </a>
         </div>
