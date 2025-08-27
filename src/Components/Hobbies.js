@@ -3,39 +3,25 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import S1 from "./Assets/S1.jpg";
-import S2 from "./Assets/s2.jpg";
-import S3 from "./Assets/s3.jpg";
-import V1 from "./Assets/Republic Day.mp4";
-import V2 from "./Assets/Raguveera.mp4";
-import V3 from "./Assets/AQNJU8NBGiNTQ4Hwb_xlEInw81QwQPct4TM9KleAgf2vfviizBFaLt41SX5nQpyR3_VRcKm4lT1BB1Dc_5a0Fr2mOkPkRpyszBMZkcc.mp4";
 
 export default function Hobbies() {
   const hobbies = [
     {
-  title: "🎥 YouTube Videos",
-  cards: [
-    { title: "Yaar Mod Do || Cover Song ", youtube: "https://www.youtube.com/embed/oJ73Qz6n_vI" },
-    { title: "Yeh No. 1 Yaari Hai || Cover Song", youtube: "https://www.youtube.com/embed/BqSaYUYrVFA" },
-    { title: "Promo || Yaar Mod Do || Cover Song ) ", youtube: "https://www.youtube.com/embed/1tEyu0XFCS4" },
-  ],
-},
+      title: "🎥 YouTube Videos",
+      cards: [
+        { title: "Yaar Mod Do || Cover Song", youtube: "https://www.youtube.com/embed/oJ73Qz6n_vI" },
+        { title: "Yeh No. 1 Yaari Hai || Cover Song", youtube: "https://www.youtube.com/embed/BqSaYUYrVFA" },
+        { title: "Promo || Yaar Mod Do || Cover Song", youtube: "https://www.youtube.com/embed/1tEyu0XFCS4" },
+      ],
+    },
     {
       title: "✏️ Sketches",
       cards: [
-        { title: "Portrait (Me)", img: S1 },
-        { title: "Abstract Art", img: S2 },
-        { title: "Virat Kohli", img: S3 },
+        { title: "Portrait (Me)", img: "https://drive.google.com/file/d/1dOPB2UqEYYDobcDLbt09BijVdr7wHkUM/preview" },
+        { title: "Abstract Art", img: "https://drive.google.com/file/d/1jFESdWoZfpRlL88i2gYC1C6dKZw846wU/preview" },
+        { title: "Virat Kohli", img: "https://drive.google.com/file/d/1g6uSPGxk4AaK71tEmnl3Rv121isXUG9e/preview" },
       ],
-    },
-    {
-      title: "🎸 Guitar",
-      cards: [
-        { title: "Republic Day", video: V1 },
-        { title: "Raguveera", video: V2 },
-        { title: "Dil Diyan Gallan", video: V3 },
-      ],
-    },
+    },   
   ];
 
   return (
@@ -63,27 +49,29 @@ export default function Hobbies() {
                       key={i}
                       className="bg-gray-800 rounded-xl shadow-md overflow-hidden hover:scale-105 transition transform"
                     >
-                      {/* Guitar Videos (Local) */}
+                      {/* Google Drive Video */}
                       {card.video && (
-                        <video
-                          controls
-                          className="w-full h-[350px] object-cover rounded-t-xl"
-                        >
-                          <source src={card.video} type="video/mp4" />
-                          Your browser does not support the video tag.
-                        </video>
+                        <iframe
+                          src={card.video}
+                          width="100%"
+                          height="350"
+                          allow="autoplay"
+                          title={card.title}
+                          className="rounded-t-xl"
+                        ></iframe>
                       )}
 
-                      {/* Sketch Images */}
+                      {/* Google Drive Images (as iframe preview) */}
                       {card.img && (
-                        <img
+                        <iframe
                           src={card.img}
-                          alt={card.title}
-                          className="h-64 w-full object-cover rounded-t-xl"
-                        />
+                          title={card.title}
+                          className="w-full h-64 rounded-t-xl"
+                          allow="autoplay"
+                        ></iframe>
                       )}
 
-                      {/* YouTube Embeds */}
+                      {/* YouTube Videos */}
                       {card.youtube && (
                         <iframe
                           width="100%"
